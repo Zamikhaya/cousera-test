@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saws Maintenance Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>SAWS Maintenace Dashboard</h1></a>
+            
+          </div>
+
+    </header>
+<form action="insert_to_m_schedule.php" method="post">
+
+<div id="main-content" class="container">
+   
+      
+    
+<section>
+<p><h2>Enter all the required information.</h2></p>
+
+
+Firstname:<input type="text" name="Name" value="Peter" size="20">
+  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Example Button">
+  
+       <!-- <label for="stationType">Station&nbsp;type:</label>
+        <input type="text" name="stationtype" id="stationType">
+   
+        <label for="stationName">Station&nbsp; name</label>
+        <input type="text" name="stationname" id="stationName">
+    
+        <label for="doneDate">Date&nbsp; done:</label>
+        <input type="date" name="donedate" id="doneDate">
+    
+  <input type="submit" value="Update"> -->
+
+
+<h2>Maintenance status </h2>
+<p>Please click the corresponding button to view the status of stationser it. The maintenance stutas is as follows:</p>
+<p> Green= Maintenance is done; Blue= Maintenance due soon; Red= Maintenance outstanding</p>
+<p><strong>Tip:</strong>Hover over the button with the mouse to change colour :</p>
+
+<button class="button button1" onclick="action='select_db_green.php'">Maintenace done</button>
+<button class="button button2" onclick="action='select_db_yellow.php'">Warning</button>
+<button class="button button3" onclick="action='select_db_red.php'">Maintenance outstanding</button>
+
+
+
+
+
+<p class="footer">
+Please forward changes,suggestions and criticism to
+<a href="mailto:jobtrack@weathersa.co.za">the developer</a>
+<br />
+<br />
+<br />
+<a href="gauteng_zama.php">BACK</a>
+</p>
+
+</section>
+</div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
